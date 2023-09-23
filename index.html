@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <meta name="google-signin-client_id" content="239263148830-gq112rt6a2ja1kkjv4tt5sr9egm74nuu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 
 <body>
@@ -18,6 +22,11 @@
     </header>
 
     <main>
+        <section id="googleAuth"> 
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <button onclick="signOut()">Sign out</button>
+        </section>
+        
         <section id="title">
             <h1> PICK YOUR POISON</h1>
             <h3> Become The Hardest Trapper or a Classy Piano Boy </h3>
