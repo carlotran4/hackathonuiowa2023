@@ -2,7 +2,6 @@
     font-family: "Raleway", sans-serif;
 }
 
-
 /* Reset some default styles for the page */
 html, body {
     margin: 0;
@@ -11,15 +10,17 @@ html, body {
 
 /* Apply a background color to the entire page */
 body {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #2F1045; /* Light gray background */
+    background-image: linear-gradient(150deg, #2f1045, 65%, #6ba8ee);
     margin: 0; /* Remove default margin */
 }
 
 /* Style the header */
 header {
-    background-color: #333; /* Dark background color */
+    background-color: #1A1520; /* Dark background color */
     color: #fff; /* White text color */
     text-align: center;
+    letter-spacing: 3px;
     padding: 20px 0; /* Add some space around the text */
 }
 
@@ -37,8 +38,15 @@ main {
 /* Style the title text (h1) */
 #title h1 {
     font-size: 36px; /* Adjust the font size to make it big */
-    color: #333; /* Set the text color */
+    color: #FFFFFF; /* Set the text color */
     font-family: "Raleway", sans-serif; /* Apply the Raleway font */
+    letter-spacing: 1px;
+}
+
+#title h3 {
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -50,8 +58,11 @@ main {
 /* Style the primary buttons inside the content section */
 /* Style the primary buttons inside the content section */
 .button-primary {
-    background-color: #007bff; /* Blue button background color */
+    background-color: #7A00E6; /* Lavender button background color */
     color: #fff; /* White text color */
+    word-spacing: 8px;
+    letter-spacing: 5px;
+    font-weight: 500;
     padding: 50px 100px; /* Increase padding for larger buttons */
     border: none; /* Remove button borders */
     text-decoration: none; /* Remove underlines from links */
@@ -71,25 +82,18 @@ main {
 
 /* Change button color on hover */
 .button-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #6600C0; /* Darker Lavender on hover */
 }
 
 /* Style the footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    background-color: #1a1520;
     color: #fff;
-}
-
-/* Center-align the footer text */
-footer p {
-    margin: 0;
-}
-
-/* Position the footer at the bottom of the page */
-footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
+
+
+

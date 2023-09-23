@@ -11,6 +11,8 @@ function initButtons(){
         instrumentDiv.id = "instrument-"+i;
         instrumentDiv.className="instrument"
         for(j=0;j<beats*squaresPerBeat;j++){
+            var container = document.createElement('div');
+            container.classList.add('checkBoxContainer')
             var checkbox = document.createElement('input');
             checkbox.type='checkbox';
             checkbox.classList.add("beatCheckbox");
@@ -18,7 +20,11 @@ function initButtons(){
                 checkbox.classList.add('sigBeatbox')
             }
             checkbox.id=instrumentDiv.id+"-"+j;
-            instrumentDiv.appendChild(checkbox);
+            var checkmark = document.createElement('span');
+            checkmark.classList.add("boxCheck");
+            instrumentDiv.appendChild(container);
+            container.appendChild(checkbox);
+            container.appendChild(checkmark);
         }
     }
 }
