@@ -1,49 +1,95 @@
-/* Reset some default styles */
-body, h1, h2, p {
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* Reset some default styles for the page */
+html, body {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling */
+/* Apply a background color to the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0; /* Remove default margin */
 }
 
+/* Style the header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
     text-align: center;
-    padding: 20px;
+    padding: 20px 0; /* Add some space around the text */
 }
 
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
+/* Style the main content section */
 main {
-    padding: 20px;
+    text-align: center;
 }
 
+/* Style the title section */
+#title {
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add some padding around the title */
+}
+
+/* Style the title text (h1) */
+#title h1 {
+    font-size: 36px; /* Adjust the font size to make it big */
+    color: #333; /* Set the text color */
+    font-family: "Raleway", sans-serif; /* Apply the Raleway font */
+}
+
+
+#content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style the primary buttons inside the content section */
+/* Style the primary buttons inside the content section */
+.button-primary {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White text color */
+    padding: 50px 100px; /* Increase padding for larger buttons */
+    border: none; /* Remove button borders */
+    text-decoration: none; /* Remove underlines from links */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 50px; /* Add space between buttons */
+    font-size: 48px; /* Increase font size for larger buttons */
+    border-radius: 20px; /* Add rounded corners */
+
+}
+
+
+/* Style links inside buttons */
+.button-primary a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Change button color on hover */
+.button-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the footer */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: #fff;
+}
+
+/* Center-align the footer text */
+footer p {
+    margin: 0;
+}
+
+/* Position the footer at the bottom of the page */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

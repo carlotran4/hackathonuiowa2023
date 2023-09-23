@@ -1,0 +1,29 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+.keys {
+    display: flex;
+    list-style-type: none;
+    font-size: 
+}
+
+.keys .white {
+    color: #000000;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 15px;
+    border-style: solid;
+}
+.keys .black {
+    color: #FFFFFF;
+    background-color: #000000;
+    z-index: 8;
+    height: 58px;
+    width: 6px;
+}
