@@ -1,5 +1,41 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
 
 .instrument{
     display: flex;
     padding-bottom: 10px;
+}
+
+img {
+    height:35px;
+}
+
+.instrument button{
+    background-color: black;
+}
+
+.beatBox{
+    border-color:black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(248, 252, 255, 0.749);
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.beatBox.clicked{
+    background-color: red;
+}
+
+.beatBox:hover {
+    filter: brightness(85%);
+}
+
+#beatCheckboxes{
+    width:80%;
+    display: inline;
 }

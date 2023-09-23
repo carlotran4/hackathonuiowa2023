@@ -16,7 +16,7 @@ body {
 }
 
 /* Style the header */
-header {
+header,h1 {
     background-color: #1A1520; /* Dark background color */
     color: #fff; /* White text color */
     text-align: center;
