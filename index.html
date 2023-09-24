@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whole Lotta Beats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <meta name="google-signin-client_id" content="239263148830-gq112rt6a2ja1kkjv4tt5sr9egm74nuu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+
+<body>
+    
+    <header>
+        <h1>Whole Lotta Beats</h1>
+    </header>
+
+    <main>
+        <section id="googleAuth"> 
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <button onclick="signOut()">Sign out</button>
+        </section>
+        
+        <section id="title">
+            <h1> PICK YOUR POISON</h1>
+            <h3> Become The Hardest Trapper or a Classy Piano Boy </h3>
+        </section>
+
+        <section id="content">
+            <!-- BEAT -->
+            <button class="button-primary"><a href="beat.html">BEAT MAKER</a></button>
+            <!-- PIANO -->
+            <button class="button-primary"><a href="piano.html">PIANO PLAYER</a></button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Kyle, Pakshal, Carlo - uIowa Hackathon 2023. All Rights Reserved! </p>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
+ <!-- The Button doesn't link, the words do -->
