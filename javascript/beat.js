@@ -49,6 +49,7 @@ for(let button of buttons){
     })
 }
 
+//Sounds for instrument buttons
 var instrumentButtons = document.getElementsByClassName("instrumentButton");
 var sounds = new Map();
 for(let button of instrumentButtons){
@@ -59,3 +60,9 @@ for(let button of instrumentButtons){
     })
     i++;
 }
+
+var bpm = document.getElementById("bpm").value;
+var squareNumbers = document.getElementsByClassName("squareNoText");
+var intervalId = window.setInterval(function(){
+    
+},60000/bpm )
