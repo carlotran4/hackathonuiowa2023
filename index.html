@@ -22,15 +22,25 @@
     </header>
 
     <main>
-        <section id="googleAuth"> 
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <button onclick="signOut()">Sign out</button>
-        </section>
-        
+
+        <!-- <section id ="googleSignOut"> -->
+        <!--    <button onclick="signOut()">Sign out</button> -->
+        <!-- </section> -->
+
         <section id="title">
+            <p id="user-name"></p>
+            <img id="profile-image" src="" alt="Profile Picture">
+            
             <h1> PICK YOUR POISON</h1>
             <h3> Become The Hardest Trapper or a Classy Piano Boy </h3>
         </section>
+
+        <section id="googleAuth">
+            <div id="auth-buttons">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </section>
+
 
         <section id="content">
             <!-- BEAT -->
@@ -38,6 +48,7 @@
             <!-- PIANO -->
             <button class="button-primary"><a href="piano.html">PIANO PLAYER</a></button>
         </section>
+
     </main>
 
     <footer>

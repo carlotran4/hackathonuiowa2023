@@ -15,58 +15,63 @@
             <header>
                 <h1>Piano Playground</h1>
             </header>
+            <form id="volume-control">
+                <p>Volume Control</p>
+                <input id="mute" type="checkbox" value="Mute" name="mute" onclick="mute('yes')">
+                <label for="mute">Mute</label>
+            </form>
             <div id="display-note">
-                <p>here</p>
+                Note
             </div>
             <div class="piano">
                 <div class="keys">
                     <ul>
                         <!-- Continuation of bottom row keys -->
-                        <li class="white"><span>F4</span></li>
-                        <li class="black"><span>F#4</span></li>
-                        <li class="white"><span>G4</span></li>
-                        <li class="black"><span>G#4</span></li>
-                        <li class="white"><span>A4</span></li>
-                        <li class="black"><span>A#4</span></li>
-                        <li class="white"><span>B4</span></li>
+                        <li class="white" onclick="display('F4')"><span>F4</span></li>
+                        <li class="black" onclick="display('F#4')"><span>F#4</span></li>
+                        <li class="white" onclick="display('G4')"><span>G4</span></li>
+                        <li class="black" onclick="display('G#4')"><span>G#4</span></li>
+                        <li class="white" onclick="display('A4')"><span>A4</span></li>
+                        <li class="black" onclick="display('A#4')"><span>A#4</span></li>
+                        <li class="white" onclick="display('B4')"><span>B4</span></li>
 
                         <!-- 12 Key Cycle -->
-                        <li class="white"><span>C5</span></li>
-                        <li class="black"><span>C#5</span></li>
-                        <li class="white"><span>D5</span></li>
-                        <li class="black"><span>D#5</span></li>
-                        <li class="white"><span>E5</span></li>
-                        <li class="white"><span>F5</span></li>
-                        <li class="black"><span>F#5</span></li>
-                        <li class="white"><span>G5</span></li>
-                        <li class="black"><span>G#5</span></li>
-                        <li class="white"><span>A5</span></li>
-                        <li class="black"><span>A#5</span></li>
-                        <li class="white"><span>B5</span></li>
-                        <li class="white"><span>C6</span></li>
-                        <li class="black"><span>C#6</span></li>
-                        <li class="white"><span>D6</span></li>
-                        <li class="black"><span>D#6</span></li>
-                        <li class="white"><span>E6</span></li>
-                        <li class="white"><span>F6</span></li>
-                        <li class="black"><span>F#6</span></li>
-                        <li class="white"><span>G6</span></li>
-                        <li class="black"><span>G#6</span></li>
-                        <li class="white"><span>A6</span></li>
-                        <li class="black"><span>A#6</span></li>
-                        <li class="white"><span>B6</span></li>
-                        <li class="white"><span>C7</span></li>
-                        <li class="black"><span>C#7</span></li>
-                        <li class="white"><span>D7</span></li>
-                        <li class="black"><span>D#7</span></li>
-                        <li class="white"><span>E7</span></li>
-                        <li class="white"><span>F7</span></li>
-                        <li class="black"><span>F#7</span></li>
-                        <li class="white"><span>G7</span></li>
-                        <li class="black"><span>G#7</span></li>
-                        <li class="white"><span>A7</span></li>
-                        <li class="black"><span>A#7</span></li>
-                        <li class="white"><span>B7</span></li>
+                        <li class="white" onclick="display('C5')"><span>C5</span></li>
+                        <li class="black" onclick="display('C#5')"><span>C#5</span></li>
+                        <li class="white" onclick="display('D5')"><span>D5</span></li>
+                        <li class="black" onclick="display('D#5')"><span>D#5</span></li>
+                        <li class="white" onclick="display('E5')"><span>E5</span></li>
+                        <li class="white" onclick="display('F5')"><span>F5</span></li>
+                        <li class="black" onclick="display('F#5')"><span>F#5</span></li>
+                        <li class="white" onclick="display('G5')"><span>G5</span></li>
+                        <li class="black" onclick="display('G#5')"><span>G#5</span></li>
+                        <li class="white" onclick="display('A5')"><span>A5</span></li>
+                        <li class="black" onclick="display('A#5')"><span>A#5</span></li>
+                        <li class="white" onclick="display('B5')"><span>B5</span></li>
+                        <li class="white" onclick="display('C6')"><span>C6</span></li>
+                        <li class="black" onclick="display('C#6')"><span>C#6</span></li>
+                        <li class="white" onclick="display('D6')"><span>D6</span></li>
+                        <li class="black" onclick="display('D#6')"><span>D#6</span></li>
+                        <li class="white" onclick="display('E6')"><span>E6</span></li>
+                        <li class="white" onclick="display('F6')"><span>F6</span></li>
+                        <li class="black" onclick="display('F#6')"><span>F#6</span></li>
+                        <li class="white" onclick="display('G6')"><span>G6</span></li>
+                        <li class="black" onclick="display('G#6')"><span>G#6</span></li>
+                        <li class="white" onclick="display('A6')"><span>A6</span></li>
+                        <li class="black" onclick="display('A#6')"><span>A#6</span></li>
+                        <li class="white" onclick="display('B6')"><span>B6</span></li>
+                        <li class="white" onclick="display('C7')"><span>C7</span></li>
+                        <li class="black" onclick="display('C#7')"><span>C#7</span></li>
+                        <li class="white" onclick="display('D7')"><span>D7</span></li>
+                        <li class="black" onclick="display('D#7')"><span>D#7</span></li>
+                        <li class="white" onclick="display('E7')"><span>E7</span></li>
+                        <li class="white" onclick="display('F7')"><span>F7</span></li>
+                        <li class="black" onclick="display('F#7')"><span>F#7</span></li>
+                        <li class="white" onclick="display('G7')"><span>G7</span></li>
+                        <li class="black" onclick="display('G#7')"><span>G#7</span></li>
+                        <li class="white" onclick="display('A7')"><span>A7</span></li>
+                        <li class="black" onclick="display('A#7')"><span>A#7</span></li>
+                        <li class="white" onclick="display('B7')"><span>B7</span></li>
 
                         <!-- Final White Key -->
                         <li class="white"><span>C8</span></li>
@@ -76,52 +81,52 @@
                 <div class="keys">
                     <ul>
                         <!-- First 3 Keys -->
-                        <li class="white"><span>A0</span></li>
-                        <li class="black"><span>A#0</span></li>
-                        <li class="white"><span>B0</span></li>
+                        <li class="white" onclick="display('A0')"><span>A0</span></li>
+                        <li class="black" onclick="display('A#0')"><span>A#0</span></li>
+                        <li class="white" onclick="display('B0')"><span>B0</span></li>
 
                         <!-- 12 Key Cycle -->
-                        <li class="white"><span>C1</span></li>
-                        <li class="black"><span>C#1</span></li>
-                        <li class="white"><span>D1</span></li>
-                        <li class="black"><span>D#1</span></li>
-                        <li class="white"><span>E1</span></li>
-                        <li class="white"><span>F1</span></li>
-                        <li class="black"><span>F#1</span></li>
-                        <li class="white"><span>G1</span></li>
-                        <li class="black"><span>G#1</span></li>
-                        <li class="white"><span>A1</span></li>
-                        <li class="black"><span>A#1</span></li>
-                        <li class="white"><span>B1</span></li>
-                        <li class="white"><span>C2</span></li>
-                        <li class="black"><span>C#2</span></li>
-                        <li class="white"><span>D2</span></li>
-                        <li class="black"><span>D#2</span></li>
-                        <li class="white"><span>E2</span></li>
-                        <li class="white"><span>F2</span></li>
-                        <li class="black"><span>F#2</span></li>
-                        <li class="white"><span>G2</span></li>
-                        <li class="black"><span>G#2</span></li>
-                        <li class="white"><span>A2</span></li>
-                        <li class="black"><span>A#2</span></li>
-                        <li class="white"><span>B2</span></li>
-                        <li class="white"><span>C3</span></li>
-                        <li class="black"><span>C#3</span></li>
-                        <li class="white"><span>D3</span></li>
-                        <li class="black"><span>D#3</span></li>
-                        <li class="white"><span>E3</span></li>
-                        <li class="white"><span>F3</span></li>
-                        <li class="black"><span>F#3</span></li>
-                        <li class="white"><span>G3</span></li>
-                        <li class="black"><span>G#3</span></li>
-                        <li class="white"><span>A3</span></li>
-                        <li class="black"><span>A#3</span></li>
-                        <li class="white"><span>B3</span></li>
-                        <li class="white"><span>C4</span></li>
-                        <li class="black"><span>C#4</span></li>
-                        <li class="white"><span>D4</span></li>
-                        <li class="black"><span>D#4</span></li>
-                        <li class="white"><span>E4</span></li>
+                        <li class="white" onclick="display('C1')"><span>C1</span></li>
+                        <li class="black" onclick="display('C#1')"><span>C#1</span></li>
+                        <li class="white" onclick="display('D1')"><span>D1</span></li>
+                        <li class="black" onclick="display('D#1')"><span>D#1</span></li>
+                        <li class="white" onclick="display('E1')"><span>E1</span></li>
+                        <li class="white" onclick="display('F1')"><span>F1</span></li>
+                        <li class="black" onclick="display('F#1')"><span>F#1</span></li>
+                        <li class="white" onclick="display('G1')"><span>G1</span></li>
+                        <li class="black" onclick="display('G#1')"><span>G#1</span></li>
+                        <li class="white" onclick="display('A1')"><span>A1</span></li>
+                        <li class="black" onclick="display('A#1')"><span>A#1</span></li>
+                        <li class="white" onclick="display('B1')"><span>B1</span></li>
+                        <li class="white" onclick="display('C2')"><span>C2</span></li>
+                        <li class="black" onclick="display('C#2')"><span>C#2</span></li>
+                        <li class="white" onclick="display('D2')"><span>D2</span></li>
+                        <li class="black" onclick="display('D#2')"><span>D#2</span></li>
+                        <li class="white" onclick="display('E2')"><span>E2</span></li>
+                        <li class="white" onclick="display('F2')"><span>F2</span></li>
+                        <li class="black" onclick="display('F#2')"><span>F#2</span></li>
+                        <li class="white" onclick="display('G2')"><span>G2</span></li>
+                        <li class="black" onclick="display('G#2')"><span>G#2</span></li>
+                        <li class="white" onclick="display('A2')"><span>A2</span></li>
+                        <li class="black" onclick="display('A#2')"><span>A#2</span></li>
+                        <li class="white" onclick="display('B2')"><span>B2</span></li>
+                        <li class="white" onclick="display('C3')"><span>C3</span></li>
+                        <li class="black" onclick="display('C#3')"><span>C#3</span></li>
+                        <li class="white" onclick="display('D3')"><span>D3</span></li>
+                        <li class="black" onclick="display('D#3')"><span>D#3</span></li>
+                        <li class="white" onclick="display('E3')"><span>E3</span></li>
+                        <li class="white" onclick="display('F3')"><span>F3</span></li>
+                        <li class="black" onclick="display('F#3')"><span>F#3</span></li>
+                        <li class="white" onclick="display('G3')"><span>G3</span></li>
+                        <li class="black" onclick="display('G#3')"><span>G#3</span></li>
+                        <li class="white" onclick="display('A3')"><span>A3</span></li>
+                        <li class="black" onclick="display('A#3')"><span>A#3</span></li>
+                        <li class="white" onclick="display('B3')"><span>B3</span></li>
+                        <li class="white" onclick="display('C4')"><span>C4</span></li>
+                        <li class="black" onclick="display('C#4')"><span>C#4</span></li>
+                        <li class="white" onclick="display('D4')"><span>D4</span></li>
+                        <li class="black" onclick="display('D#4')"><span>D#4</span></li>
+                        <li class="white" onclick="display('E4')"><span>E4</span></li>
                         <!-- continuing keys move to top row -->
                     </ul>
                 </div>

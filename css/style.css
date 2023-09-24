@@ -92,7 +92,18 @@ footer {
     color: #fff;
     position: absolute;
     width: 100%;
-    bottom: 0;
+}
+
+
+#googleAuth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center-align the Google Sign-In button specifically */
+.g-signin2 {
+    margin: 0 auto; /* Center horizontally */
 }
 
 

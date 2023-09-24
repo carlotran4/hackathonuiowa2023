@@ -35,6 +35,15 @@ function initsquareNo(){
         div.appendChild(span);
     }
 }
+function DOMRegex(regex) {
+    let output = [];
+    for (let i of document.querySelectorAll('*')) {
+        if (regex.test(i.id)) { // or whatever attribute you want to search
+            output.push(i);
+        }
+    }
+    return output;
+}
 
 
 initButtons();
@@ -42,7 +51,6 @@ initsquareNo();
 
 var buttons = document.getElementsByClassName("beatBox");
 for(let button of buttons){
-    console.log(button.id)
     button.addEventListener("click",function(){
         console.log("clicked");
         this.classList.toggle("clicked");
@@ -61,15 +69,22 @@ for(let button of instrumentButtons){
     i++;
 }
 
+
+
 var bpm = document.getElementById("bpm").value;
 var squareNumbers = document.getElementsByClassName("squareNoText");
 var i = 0;
-
 var intervalId = window.setInterval(function(){
     squareNumbers[31-i].classList.toggle('current');
-    // if(i==0) {squareNumbers[beats*squaresPerBeat-1].classList.toggle('current');}
-    // else {squareNumbers[i-1].classList.toggle('current');}
-
+    
+    var re = new RegExp("^box-[0-9]+-"+i+"$");
+    currentBoxes = DOMRegex(re);
+    for(let box of currentBoxes){
+        if(box.classList.contains('clicked')){
+            var button = box.parentElement.querySelector('.instrumentButton')
+            button.click()        
+        }
+    }
 
     if(i<beats*squaresPerBeat-1) i++;
     else{i = 0}

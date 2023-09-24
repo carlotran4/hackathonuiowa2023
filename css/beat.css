@@ -59,3 +59,26 @@ img {
     background-color: #303236;
     border-radius: 5px;
 }
+
+#clearAll{
+    float:right;
+    margin:auto;
+}
+
+#save{
+    float:right;
+    margin-right: 10px;
+}
+
+#playButton{
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+#bpm {
+    width: 50px;
+}
+
