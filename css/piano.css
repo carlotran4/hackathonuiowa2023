@@ -6,6 +6,7 @@
     padding-left:0px;
     padding-top:0px;
     left:0px;
+    letter-spacing: 1px;
 }
 
 body {
@@ -17,10 +18,16 @@ body {
 
 h1 {
     color: #FFFFFF;
-    
     text-align: center;
     user-select: none;
     padding: 25px;
+    font-size: 42px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
 }
 
 ul {
@@ -48,14 +55,18 @@ span {
 #volume-control {
     position: absolute;
     color: white;
-    background: linear-gradient(150deg, #4F3A54, #383355);
-    padding: 15px;
-    border-radius: 8px;
+    background: linear-gradient(150deg, #5C3C64, #3B355F);
     width: 20%;
     left: 8%;
     height: 125px;
+    padding: 15px;
+    border-radius: 8px;
     z-index: 10;
     user-select: none;
+}
+
+#volume-control #settings {
+    margin-left: 25px;
 }
 
 #volume-control input {
@@ -80,9 +91,30 @@ span {
     user-select: none;
 }
 
+button {
+    position: absolute;
+    color: white;
+    background: linear-gradient(150deg, #5C3C64, #3B355F);
+    width: 25%;
+    height: 155px;
+    padding: 15px;
+    margin-left: 70%;
+    border-radius: 8px;
+    z-index: 10;
+    border-style: none;
+}
+
+button:hover {
+    background: linear-gradient(150deg, #4F3A54, #383355)
+}
+
+button:active {
+    background: linear-gradient(150deg, #3B2740, #2b2741)
+    
+}
+
 .wrapper {
     position: absolute;
-    
     height: 100%;
     width: 100%;
     overflow: hidden;

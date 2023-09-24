@@ -73,7 +73,6 @@ main {
 
 }
 
-
 /* Style links inside buttons */
 .button-primary a {
     color: #fff; /* White text color for links */
@@ -85,6 +84,10 @@ main {
     background-color: #6600C0; /* Darker Lavender on hover */
 }
 
+.button-primary:active {
+    background-color: #5900a7; 
+}
+
 /* Style the footer */
 footer {
     text-align: center;
@@ -94,11 +97,11 @@ footer {
     width: 100%;
 }
 
-
 #googleAuth {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* Center-align the Google Sign-In button specifically */

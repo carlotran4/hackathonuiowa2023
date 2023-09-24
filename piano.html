@@ -15,15 +15,22 @@
             <header>
                 <h1>Piano Playground</h1>
             </header>
-            <form id="volume-control">
+            <div id="volume-control">
                 <h3>Volume Control</h3>
                 <br>
-                <label for="mute">Mute</label>
-                <input id="mute" type="checkbox" value="Mute" name="mute" onchange="m()">
-                <br>
-                <br>
-                <label for="slider">Volume</label>
-                <input id="slider" type="range" value="Volume" name="volume" min="0" max="1" step="0.01">
+                <form id="settings">
+                    <label for="mute">Mute</label>
+                    <input id="mute" type="checkbox" onchange="m()">
+                    <br><br>
+                    <label for="slider">Volume</label>
+                    <input id="slider" type="range" min="0" max="1" step="0.01">
+                </form>
+            </div>
+            <form action="beat.html">
+                <button type="submit" id="navigation">
+                    <h3>Go To</h3>
+                    <h1>Beat Maker</h1>
+                </button> 
             </form>
             <div id="display-note">
                 Note
@@ -80,7 +87,6 @@
 
                         <!-- Final White Key -->
                         <li class="white"><span>C8</span></li>
-
                     </ul>
                 </div>
                 <div class="keys">

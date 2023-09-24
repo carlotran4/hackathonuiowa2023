@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
     
+    <!-- GOOGLE AUTH -->
     <meta name="google-signin-client_id" content="239263148830-gq112rt6a2ja1kkjv4tt5sr9egm74nuu.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
@@ -28,8 +29,9 @@
         <!-- </section> -->
 
         <section id="title">
-            <p id="user-name"></p>
-            <img id="profile-image" src="" alt="Profile Picture">
+
+            <!-- <p id="user-name"></p> --> 
+            <!-- <img id="profile-image" src="" alt="Profile Picture"> -->
             
             <h1> PICK YOUR POISON</h1>
             <h3> Become The Hardest Trapper or a Classy Piano Boy </h3>
@@ -42,12 +44,12 @@
         </section>
 
 
-        <section id="content">
+        <form id="content">
             <!-- BEAT -->
-            <button class="button-primary"><a href="beat.html">BEAT MAKER</a></button>
+            <button type = submit class="button-primary" formaction="beat.html"><span>BEAT MAKER</span></button>
             <!-- PIANO -->
-            <button class="button-primary"><a href="piano.html">PIANO PLAYER</a></button>
-        </section>
+            <button type = submit class="button-primary" formaction="piano.html"><span>PIANO PLAYER</span></button>
+        </form>
 
     </main>
 
@@ -57,4 +59,3 @@
     <script src="javascript/script.js"></script>
 </body>
 </html>
- <!-- The Button doesn't link, the words do -->

@@ -37,6 +37,6 @@ function m () {
 
 const volumeSlider = document.querySelector("#slider");
 const handleVolume = (e) => {
-    tunes.get("C3").volume = e.currentTarget.value;
+    tunes.forEach((x) => x.volume = e.currentTarget.value);
 }
 volumeSlider.addEventListener("input", handleVolume);

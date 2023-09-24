@@ -1,6 +1,44 @@
 html, body {
     margin: 0;
     height: 100%;
+   
+}
+
+h1 {
+    position: relative;
+    margin-top: -2px;
+    margin-bottom: -5px;
+    height: 50px;
+}
+
+button#to-piano {
+    color: white;
+    background: #9537c4;
+    width: 25%;
+    margin-top: 15px;
+    padding: 25px;
+    margin-left: 35%;
+    border-radius: 5px;
+    border: none;
+}
+
+button#to-piano:hover {
+    background: #5b1e79;
+}
+
+button#to-piano:active {
+    background: #481761;
+}
+
+#to-piano span {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#configBar {
+    padding: 15px 10px;
+    z-index: 15;
 }
 
 .instrument{
@@ -15,8 +53,11 @@ img {
 .instrument button{
     background-color: black;
     width: 50px;
+    height: 35px;
     margin: auto;
     border-style: none;
+    color: white;
+    border-radius: 5px;
 }
 
 .beatBox{
@@ -76,9 +117,21 @@ img {
 
 label {
     margin-right: 5px;
+    color: white; 
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 
 #bpm {
-    width: 50px;
+    width: 75px;
 }
+
+#fileSelect {
+    padding-top: 50px;
+    padding-left: 70px;
+
+}
+
+
 
