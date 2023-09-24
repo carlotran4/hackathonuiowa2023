@@ -16,9 +16,14 @@
                 <h1>Piano Playground</h1>
             </header>
             <form id="volume-control">
-                <p>Volume Control</p>
-                <input id="mute" type="checkbox" value="Mute" name="mute" onclick="mute('yes')">
+                <h3>Volume Control</h3>
+                <br>
                 <label for="mute">Mute</label>
+                <input id="mute" type="checkbox" value="Mute" name="mute" onchange="m()">
+                <br>
+                <br>
+                <label for="slider">Volume</label>
+                <input id="slider" type="range" value="Volume" name="volume" min="0" max="1" step="0.01">
             </form>
             <div id="display-note">
                 Note

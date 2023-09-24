@@ -49,11 +49,19 @@ span {
     position: absolute;
     color: white;
     background: linear-gradient(150deg, #4F3A54, #383355);
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
-    left: 80px;
+    width: 20%;
+    left: 8%;
+    height: 125px;
     z-index: 10;
     user-select: none;
+}
+
+#volume-control input {
+    position: relative;
+    left: 20px;
+    top: 2px;
 }
 
 #display-note {

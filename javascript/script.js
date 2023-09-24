@@ -22,6 +22,7 @@ function onSignIn(googleUser) {
 }
 
 function signOut() {
+  
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut().then(function () {
     console.log('User signed out.');
@@ -29,6 +30,6 @@ function signOut() {
     // Clear the displayed user information.
     document.getElementById('user-name').textContent = '';
     document.getElementById('profile-image').src = '';
-    
+
     });
 }

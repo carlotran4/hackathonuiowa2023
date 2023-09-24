@@ -70,11 +70,20 @@ for(let button of instrumentButtons){
 }
 
 
+var squareNumbers = document.getElementsByClassName("squareNoText");
 
 var bpm = document.getElementById("bpm").value;
-var squareNumbers = document.getElementsByClassName("squareNoText");
 var i = 0;
-var intervalId = window.setInterval(function(){
+var intervalId;
+
+function changeInterval(value){
+    console.log(value)
+    clearInterval(intervalId);
+    intervalId=setInterval(runAtInterval, 60000/(value*squaresPerBeat))
+    console.log(intervalId);
+}
+
+function runAtInterval(){
     squareNumbers[31-i].classList.toggle('current');
     
     var re = new RegExp("^box-[0-9]+-"+i+"$");
@@ -88,5 +97,15 @@ var intervalId = window.setInterval(function(){
 
     if(i<beats*squaresPerBeat-1) i++;
     else{i = 0}
-    
-},60000/(bpm*squaresPerBeat) )
+    console.log(intervalId);
+}
+
+function playButtonClick( button){
+    button.classList.toggle('paused');
+    if(button.classList.contains('paused')){
+        clearInterval(intervalId);
+    }
+    else{
+        changeInterval(document.getElementById("bpm").value);
+    }
+}

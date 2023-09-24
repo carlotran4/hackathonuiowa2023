@@ -1,6 +1,7 @@
 var white = document.getElementsByClassName("white");
 var black = document.getElementsByClassName("black");
 var tunes = new Map();
+var mu = false;
 
 for(let tune of white){
     tunes.set(tune.firstChild.textContent,new Audio(".\\tunes\\"+tune.firstChild.textContent.toLowerCase() +".ogg"))
@@ -22,11 +23,20 @@ function display (note) {
     document.getElementById("display-note").firstChild.textContent = note;
 }
 
-function mute (x) {
-    if (x.checked) {
-        console.log("muted");
+function m () {
+    if (!mu) {
+        mu = true;
+        tunes.forEach((values) => {values.muted = true});
     }
+    
     else {
-        console.log("not");
+        mu = false;
+        tunes.forEach((values) => {values.muted = false});
     }
 }
+
+const volumeSlider = document.querySelector("#slider");
+const handleVolume = (e) => {
+    tunes.get("C3").volume = e.currentTarget.value;
+}
+volumeSlider.addEventListener("input", handleVolume);
