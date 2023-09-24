@@ -63,6 +63,15 @@ for(let button of instrumentButtons){
 
 var bpm = document.getElementById("bpm").value;
 var squareNumbers = document.getElementsByClassName("squareNoText");
+var i = 0;
+
 var intervalId = window.setInterval(function(){
+    squareNumbers[31-i].classList.toggle('current');
+    // if(i==0) {squareNumbers[beats*squaresPerBeat-1].classList.toggle('current');}
+    // else {squareNumbers[i-1].classList.toggle('current');}
+
+
+    if(i<beats*squaresPerBeat-1) i++;
+    else{i = 0}
     
-},60000/bpm )
+},60000/(bpm*squaresPerBeat) )

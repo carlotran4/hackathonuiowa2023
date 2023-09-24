@@ -46,13 +46,20 @@ span {
 }
 
 #display-note {
-    position: relative;
+    position: absolute;
     color: white;
-    text-align: center;
-    align-items: center;
-    background: linear-gradient(#E338A6, #6BA8EE);
-    width: 100px;
+    background: radial-gradient(#6BC7EE, #B034E2);
+    width: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    height: 100px;
     border-radius: 10px;
+}
+#display-note p {
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
 }
 
 .wrapper {
