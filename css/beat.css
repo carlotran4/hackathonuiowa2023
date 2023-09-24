@@ -14,6 +14,9 @@ img {
 
 .instrument button{
     background-color: black;
+    width: 50px;
+    margin: auto;
+    border-style: none;
 }
 
 .beatBox{
@@ -38,4 +41,21 @@ img {
 #beatCheckboxes{
     width:80%;
     display: inline;
+}
+
+.squareNoText{
+    width: 3.125%;
+    float: right;
+    text-align: center;
+}
+
+.squareNoText.current{
+    background-color: antiquewhite;
+}
+
+#squareNo{
+    width: 95.5%;
+    float: right;
+    background-color: #303236;
+    border-radius: 5px;
 }
